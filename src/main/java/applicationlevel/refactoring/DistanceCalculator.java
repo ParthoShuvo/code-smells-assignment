@@ -6,6 +6,7 @@ public class DistanceCalculator {
     }
 
     public double toOriginFrom(Point p) {
-        return Math.sqrt(Math.pow(p.getX(), 2) + Math.pow(p.getY(), 2));
+        Point origin = new Point(0, 0);
+        return betweenPoints(origin, p);
     }
 }
