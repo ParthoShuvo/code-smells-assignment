@@ -16,7 +16,7 @@ public class Pub {
 
     public static final int STUDENT_DISCOUNT = 10;
     public static final int MAX_NUMBER_OF_DRINKS = 2;
-    public static final double AMOUNT_FULL = 1;
+    public static final double AMOUNT_ONE = 1;
     public static final double AMOUNT_HALF = 0.5;
 
     private Map<String, Beverage> menu;
@@ -31,15 +31,15 @@ public class Pub {
         menu.put(ONE_CIDER, new Cider());
         menu.put(A_PROPER_CIDER, new ProperCider());
         menu.put(GT, new Cocktail()
-                .withIngredient(Cocktail.Ingredient.Gin, AMOUNT_FULL)
-                .withIngredient(Cocktail.Ingredient.TONIC_WATER, AMOUNT_FULL)
-                .withIngredient(Cocktail.Ingredient.GREEN_STUFF, AMOUNT_FULL)
+                .withIngredient(Cocktail.Ingredient.Gin, AMOUNT_ONE)
+                .withIngredient(Cocktail.Ingredient.TONIC_WATER, AMOUNT_ONE)
+                .withIngredient(Cocktail.Ingredient.GREEN_STUFF, AMOUNT_ONE)
         );
         menu.put(BACARDI_SPECIAL, new Cocktail()
                 .withIngredient(Cocktail.Ingredient.Gin, AMOUNT_HALF)
-                .withIngredient(Cocktail.Ingredient.RUM, AMOUNT_FULL)
-                .withIngredient(Cocktail.Ingredient.GRENADINE, AMOUNT_FULL)
-                .withIngredient(Cocktail.Ingredient.LIME_JUICE, AMOUNT_FULL)
+                .withIngredient(Cocktail.Ingredient.RUM, AMOUNT_ONE)
+                .withIngredient(Cocktail.Ingredient.GRENADINE, AMOUNT_ONE)
+                .withIngredient(Cocktail.Ingredient.LIME_JUICE, AMOUNT_ONE)
         );
         return menu;
     }
