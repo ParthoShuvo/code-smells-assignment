@@ -39,7 +39,7 @@
         ```
    
  + Class Level 
-    `mvn -Dtest=`mvn -Dtest=PubTest test`
+    `mvn -Dtest=PubTest test`
     - SwitchSmell
         ```
         mvn -Dtest=classlevel.switchsmell.PubTest test
